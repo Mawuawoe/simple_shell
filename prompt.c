@@ -6,5 +6,5 @@
 
 void display_prompt(void)
 {
-_putstr("DES_shell $ ");
+_putstr("#cisfun$ ");
 }
