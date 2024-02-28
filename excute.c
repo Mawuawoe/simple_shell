@@ -19,8 +19,9 @@ if (pid == 0)
 int val = execve(argvec[0], argvec, NULL);
 if (val == -1)
 {
-perror(av[0]);
-exit(EXIT_FAILURE);
+    perror(av[0]);
+    printf("err");
+    exit(EXIT_FAILURE);
 }
 }
 else
