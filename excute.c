@@ -6,7 +6,7 @@
 */
 #include "shell.h"
 
-int excute(char argvec[], char **av)
+int excute(char *argvec[], char **av)
 {
 pid_t  pid;
 pid = fork();
@@ -16,7 +16,7 @@ exit(EXIT_FAILURE);
 }
 if (pid == 0)
 {
-int val = execve(argvec, NULL, NULL);
+int val = execve(argvec[0], argvec, NULL);
 if (val == -1)
 {
 perror(av[0]);
