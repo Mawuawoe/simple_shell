@@ -8,7 +8,7 @@
 
 int main(int ac, char **argv)
 {
-    (void) ac;
+(void) ac;
 if (isatty(STDIN_FILENO) == 1)
 {
 while (1)
