@@ -20,9 +20,9 @@ if (feof(stdin))
 {
 exit(0);
 }
-if (buff[(strlen(buff) - 1)] == '\n')
+if (buff[(_strlen(buff) - 1)] == '\n')
 {
-buff[(strlen(buff) - 1)] = '\0';
+buff[(_strlen(buff) - 1)] = '\0';
 }
 /*tokenize(buff, av);*/
 excute_1(buff, av);

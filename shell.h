@@ -18,6 +18,7 @@ int tokenize(char *buff, char **av);
 int excute(char *argvec[], char **av);
 int excute_1(char *buff, char **av);
 int read_input_non_inter(char **av);
+int _strlen(char *str);
 
 
 #endif
