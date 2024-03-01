@@ -29,6 +29,7 @@ trim_buff = remove_spaces(buff);
 /*printf("%s\n",trim_buff);*/
 /*tokenize(buff, av);*/
 excute_1(trim_buff, av);
+free(trim_buff);
 read = fgets(buff, sizeof(buff), stdin);
 }
 return (0);

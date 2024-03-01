@@ -2,7 +2,7 @@
 
 int main (void)
 {
-    char str[] = "deadass        ";
+    char str[] = "deadass";
     char *start = remove_spaces(str);
     printf("the trimed string is: %s\n", start);
     free(start);
