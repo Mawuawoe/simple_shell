@@ -1,0 +1,24 @@
+#include "shell.h"
+
+/**
+ * tokenize - function for tokenization
+ * @buff: pointer to the string to be tokenized
+ * @av: argument vector
+ * Return: an int
+*/
+
+int main(void)
+{
+    char s[] = "the girl\nthe boy\n";
+    printf("%s", s);
+
+    /*char d[] = " ";*/
+
+   char *token = strtok(s, "\n");
+    while(token != NULL)
+    {
+        printf("%s\n", token);
+        token = strtok(NULL, "\n");   
+    }
+    return(0);
+}

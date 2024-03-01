@@ -7,31 +7,26 @@
 
 int read_input_non_inter(char **av)
 {
-/*size of the buff set 0*/
-size_t n = 0;
-/*buff to store string from getline*/
-char *buff = NULL;
-/*getline returns an int stored in red*/
-int red;
-red = getline(&buff, &n, stdin);
+/*char *args[50];*/ /*array of strings*/
+char buff[100]; /*buff to store the user input*/
+char *read;
+(void) av;
+
+read = fgets(buff, sizeof(buff), stdin);
+while (read != NULL)
+{
+/*printf("%s", buff);*/
 if (feof(stdin))
 {
-free(buff);
 exit(0);
 }
-if (red == -1)
+if (buff[(strlen(buff) - 1)] == '\n')
 {
-perror(av[0]);
-free(buff);
-exit(EXIT_FAILURE);
+buff[(strlen(buff) - 1)] = '\0';
 }
-if (buff[(red - 1)] == '\n')
-{
-buff[(red - 1)] = '\0';
+/*tokenize(buff, av);*/
+excute_1(buff, av);
+read = fgets(buff, sizeof(buff), stdin);
 }
-/*the string from getline stored in buff is tokenizesd here*/
-tokenize(buff, av);
-/*excute_1(buff, av);*/
-free(buff);
 return (0);
 }
