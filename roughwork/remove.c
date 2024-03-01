@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-void trim(char *str) {
+void remove_spaces(char *str)
+ {
     char *end;
     // Trim leading spaces
     while (*str && (*str == ' ' || *str == '\t'))
@@ -15,10 +17,11 @@ void trim(char *str) {
     // Write new null terminator
     *(end + 1) = 0;
 }
+
 int main() {
     char input[] = "   Hello, world!   ";
     printf("Before: \"%s\"\n", input);
-    char *trimmed = remove_spaces(input);
+    remove_spaces(input);
     printf("After:  \"%s\"\n", trimmed);
     free(trimmed); // Don't forget to free the dynamically allocated memory
     return 0;
