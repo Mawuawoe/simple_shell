@@ -26,7 +26,7 @@ if (buff[(_strlen(buff) - 1)] == '\n')
 buff[(_strlen(buff) - 1)] = '\0';
 }
 trim_buff = remove_spaces(buff);
-printf("%s\n",trim_buff);
+/*printf("%s\n",trim_buff);*/
 /*tokenize(buff, av);*/
 excute_1(trim_buff, av);
 read = fgets(buff, sizeof(buff), stdin);
