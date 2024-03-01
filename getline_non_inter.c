@@ -12,10 +12,10 @@ char buff[100]; /*buff to store the user input*/
 char *read;
 (void) av;
 
-read = fgets(buff, sizeof(buff), stdin);
+/*read = fgets(buff, sizeof(buff), stdin);
 while (read != NULL)
 {
-/*printf("%s", buff);*/
+printf("%s", buff);*/
 if (feof(stdin))
 {
 exit(0);
