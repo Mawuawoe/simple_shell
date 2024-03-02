@@ -20,6 +20,7 @@ i++;
 len = strlen(str);
 if (i == len)
 {
+    free(trim_end);
     return(NULL);
 }
 while (str[i] != '\0')

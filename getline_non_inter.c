@@ -28,7 +28,6 @@ trim_buff = remove_spaces(buff);
 /*tokenize(buff, av);*/
 if(trim_buff == NULL)
 {
-free(trim_buff);
 exit(0);
 }
 else
