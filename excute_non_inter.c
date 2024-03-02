@@ -29,5 +29,7 @@ else
 {
 wait(NULL);
 }
+free(buff);
+buff = NULL;
 return (0);
 }
