@@ -35,5 +35,6 @@ while (i < a)
 trim_end[i] = trim_from_B[i];
 i++;
 }
+trim_end[i] = '\0';
 return (trim_end);
 }

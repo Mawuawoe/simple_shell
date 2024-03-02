@@ -1,7 +1,7 @@
 /**
  * _strlen - function that calculate string length
  * @str: given string
- * returns: the length of string
+ * Return: the length of string
 */
 #include"shell.h"
 
