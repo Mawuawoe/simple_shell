@@ -19,7 +19,7 @@ int excute(char *argvec[], char **av);
 int excute_1(char *buff, char **av);
 int read_input_non_inter(char **av);
 int _strlen(char *str);
-/*char *remove_spaces(char *str);*/
+char *remove_spaces(char *str);
 
 
 #endif

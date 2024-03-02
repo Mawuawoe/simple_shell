@@ -13,6 +13,7 @@ size_t n = 0;
 char *buff = NULL;
 /*getline returns an int stored in red*/
 int red;
+char *trim_buff;
 red = getline(&buff, &n, stdin);
 if (feof(stdin))
 {
@@ -32,7 +33,7 @@ buff[(red - 1)] = '\0';
 
 /*the string from getline stored in buff is tokenizesd here*/
 /*tokenize(buff, av);*/
-excute_1(buff, av);
-/*free(buff);*/
+trim_buff = remove_spaces(buff);
+excute_1(trim_buff, av);
 return (0);
 }
