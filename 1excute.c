@@ -14,6 +14,7 @@ arg[0] = buff;
 pid = fork();
 if (pid == -1)
 {
+free(buff);
 exit(EXIT_FAILURE);
 }
 if (pid == 0)
@@ -21,6 +22,7 @@ if (pid == 0)
 int val = execve(arg[0], arg, NULL);
 if (val == -1)
 {
+free(buff);
 perror(av[0]);
 exit(EXIT_FAILURE);
 }
@@ -29,5 +31,6 @@ else
 {
 wait(NULL);
 }
+free(buff);
 return (0);
 }

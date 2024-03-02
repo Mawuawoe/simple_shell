@@ -29,9 +29,10 @@ if (buff[(red - 1)] == '\n')
 {
 buff[(red - 1)] = '\0';
 }
+
 /*the string from getline stored in buff is tokenizesd here*/
 /*tokenize(buff, av);*/
 excute_1(buff, av);
-free(buff);
+/*free(buff);*/
 return (0);
 }
