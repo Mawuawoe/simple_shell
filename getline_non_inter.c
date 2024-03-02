@@ -28,8 +28,6 @@ trim_buff = remove_spaces(buff);
 /*tokenize(buff, av);*/
 excute_1(trim_buff, av);
 read = fgets(buff, sizeof(buff), stdin);
-free(trim_buff);
-trim_buff = NULL;
 }
 return (0);
 }
