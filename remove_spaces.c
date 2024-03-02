@@ -22,6 +22,7 @@ trim_from_B[a] = str[i];
 a++;
 i++;
 }
+trim_from_B[a] = '\0';
 while (trim_from_B[q] != '\0')
 {
 if (trim_from_B[q] == ' ' || trim_from_B[q] == '\t')
@@ -35,6 +36,6 @@ while (k < q)
 trim_end[k] = trim_from_B[k];
 k++;
 }
-/*trim_end[k] = '\0';*/
+trim_end[k] = '\0';
 return (trim_end);
 }
