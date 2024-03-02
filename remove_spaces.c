@@ -12,9 +12,15 @@ int i = 0;
 int a = 0;
 int q = 0;
 int k = 0;
+int len;
 while (str[i] != '\0' && (str[i] == ' ' || str[i] == '\t'))
 {
 i++;
+}
+len = strlen(str);
+if (i == len)
+{
+    return(NULL);
 }
 while (str[i] != '\0')
 {
