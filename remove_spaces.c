@@ -36,7 +36,5 @@ trim_end[k] = trim_from_B[k];
 k++;
 }
 trim_end[k] = '\0';
-free(str);
-str = NULL;
 return (trim_end);
 }
