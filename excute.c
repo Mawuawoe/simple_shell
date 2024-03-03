@@ -8,6 +8,7 @@
 
 int excute(char *argvec[], char **av)
 {
+/*int i = 0;*/
 pid_t  pid;
 pid = fork();
 if (pid == -1)
@@ -27,5 +28,10 @@ else
 {
 wait(NULL);
 }
+/*while(argvec[i] != NULL)
+{
+free(argvec[i]);
+i++;
+}*/
 return (0);
 }

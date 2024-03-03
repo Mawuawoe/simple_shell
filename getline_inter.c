@@ -32,8 +32,8 @@ buff[(red - 1)] = '\0';
 }
 
 /*the string from getline stored in buff is tokenizesd here*/
-/*tokenize(buff, av);*/
+tokenize(buff, av);
 /*trim_buff = remove_spaces(buff);*/
-excute_inter(buff, av);
+/*excute_inter(buff, av);*/
 return (0);
 }
