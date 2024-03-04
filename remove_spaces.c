@@ -40,6 +40,7 @@ if (trim_from_B[q] == ' ' || trim_from_B[q] == '\t')
     }
     else
     {
+        free(trim_end);
         return(trim_from_B);
     }
 
