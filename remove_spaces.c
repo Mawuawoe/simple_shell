@@ -6,7 +6,7 @@
 */
 char *remove_spaces(char *str)
 {
-char *trim_from_B = malloc(sizeof(char) * 100);
+char *trim_from_B = malloc(sizeof(char) * 101);
 char *trim_end = malloc(sizeof(char) * 100);
 int i = 0;
 int a = 0;
