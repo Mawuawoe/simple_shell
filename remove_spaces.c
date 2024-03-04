@@ -6,7 +6,7 @@
 */
 char *remove_spaces(char *str)
 {
-char trim_from_B[100];
+char *trim_from_B = malloc(sizeof(char) * 100);
 char *trim_end = malloc(sizeof(char) * 100);
 int i = 0;
 int a = 0;
@@ -17,7 +17,7 @@ while (str[i] != '\0' && (str[i] == ' ' || str[i] == '\t'))
 {
 i++;
 }
-len = strlen(str);
+len = _strlen(str);
 if (i == len)
 {
     free(trim_end);
@@ -34,7 +34,15 @@ while (trim_from_B[q] != '\0')
 {
 if (trim_from_B[q] == ' ' || trim_from_B[q] == '\t')
 {
-break;
+    if(trim_from_B[q + 1] == ' ' || trim_from_B[q + 1] == '\t')
+    {
+        break;
+    }
+    else
+    {
+        return(trim_from_B);
+    }
+
 }
 q++;
 }

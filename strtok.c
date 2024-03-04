@@ -29,6 +29,6 @@ argvec[i] = NULL;/*set the end of the array to NULL*/
     /*a++;*/
 /*}*/
 excute(argvec, av);
-free(token);
+/*free(token);*/
 return (0);
 }
