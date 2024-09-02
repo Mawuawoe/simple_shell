@@ -1,0 +1,19 @@
+#include"shell.h"
+
+int main (int ac, char **argv)
+{
+    char *cmd = argv[1];
+    char * path_cmd = handle_path(cmd);
+   
+    if (path_cmd != NULL)
+    {
+         printf("the path is %s\n", path_cmd);
+         /*free(path_cmd);*/
+    }
+    else
+    {
+        printf("cmd does not exist\n");
+    }
+    free(path_cmd);
+    return(0);
+}

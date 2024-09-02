@@ -19,10 +19,10 @@ read_input(&argv[0]);
 }
 else
 {
-/*while(1)
-{
-read_input(&argv[0]);
-}*/
+/*while(1)*/
+/*{*/
+/*read_input(&argv[0]);*/
+/*}*/
 read_input_non_inter(&argv[0]);
 }
 return (0);

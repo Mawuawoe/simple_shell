@@ -28,10 +28,5 @@ else
 {
 wait(NULL);
 }
-/*while(argvec[i] != NULL)
-{
-free(argvec[i]);
-i++;
-}*/
 return (0);
 }

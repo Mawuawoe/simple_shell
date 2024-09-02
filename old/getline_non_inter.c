@@ -25,15 +25,15 @@ buff[(_strlen(buff) - 1)] = '\0';
 }
 trim_buff = remove_spaces(buff);
 /*printf("out here: %s\n",trim_buff);*/
-/*if(trim_buff == NULL)
+if(trim_buff == NULL)
 {
 exit(0);
-}*/
-/*else*/
-/*{*/
+}
+else
+{
 tokenize(trim_buff, av);
 /*excute_non_inter(trim_buff, av);*/
-/*}*/
+}
 read = fgets(buff, sizeof(buff), stdin);
 }
 return (0);

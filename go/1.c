@@ -1,6 +1,6 @@
 #include "shell.h"
 
-char **concatinate_strings (char **argv)
+int main (int ac, char **argv)
 {
     struct stat st;
     char *value_of_key = NULL;
